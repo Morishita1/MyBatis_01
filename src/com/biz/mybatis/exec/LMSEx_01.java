@@ -19,9 +19,11 @@ public class LMSEx_01 {
 			
 			// 학번 변수 값읋 가져오기
 			String st_num=stdService.getSt_num();
-			// 성적을 입력하기 위해서 학번을 ScoreService에 Se
+			// 성적을 입력하기 위해서 학번을 ScoreService에 Setting
 			scoreService.setSt_num(st_num);
+			// 점수리스트보기
 			scoreService.viewScore(st_num);
+			// 점수 추가
 			scoreService.insertScore(st_num);
 			
 			
